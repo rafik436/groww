@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team RAFSA | Telegram</title>
 
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1738631787257862');
+fbq('track','PageView');
+</script>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  min-height:100vh;
+  background:
+  radial-gradient(circle at 50% 0%,#604900 0%,#17213a 30%,#050912 75%);
+  color:#fff;
+  padding:18px 14px 35px;
+}
+
+.container{
+  width:100%;
+  max-width:520px;
+  margin:auto;
+}
+
+/* VERIFIED */
+.badge{
+  display:block;
+  width:max-content;
+  margin:5px auto 16px;
+  padding:9px 19px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#00c853,#00a844);
+  font-weight:bold;
+  box-shadow:0 5px 20px rgba(0,200,83,.25);
+}
+
+/* CARD */
+.card{
+  padding:27px 18px;
+  border-radius:27px;
+  background:rgba(24,35,61,.95);
+  border:1px solid rgba(255,215,0,.42);
+  box-shadow:
+    0 15px 45px rgba(0,0,0,.45),
+    0 0 30px rgba(255,215,0,.08);
+}
+
+/* LOGO */
+.logo{
+  width:100px;
+  height:100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+
+  color:#171717;
+  font-size:25px;
+  font-weight:900;
+
+  background:linear-gradient(
+    135deg,
+    #fff4a3,
+    #ffd700,
+    #b8860b
+  );
+
+  border:3px solid #ffe878;
+  box-shadow:0 0 28px rgba(255,215,0,.35);
+}
+
+h1{
+  text-align:center;
+  margin-top:18px;
+  font-size:34px;
+
+  background:linear-gradient(
+    90deg,
+    #fff,
+    #ffd700,
+    #fff2a6
+  );
+
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.subtitle{
+  text-align:center;
+  color:#cbd5e1;
+  line-height:1.55;
+  margin:10px 0 20px;
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.stat{
+  text-align:center;
+  padding:17px 8px;
+  border-radius:17px;
+  background:rgba(255,215,0,.09);
+  border:1px solid rgba(255,215,0,.18);
+}
+
+.stat strong{
+  display:block;
+  font-size:25px;
+  color:#ffd700;
+}
+
+.stat span{
+  color:#cbd5e1;
+  font-size:13px;
+  margin-top:4px;
+  display:block;
+}
+
+/* TELEGRAM BUTTON - MEMBER KE NICHE */
+.telegram-btn{
+  display:block;
+  width:100%;
+  margin:17px 0 22px;
+  padding:18px 12px;
+
+  text-align:center;
+  text-decoration:none;
+
+  border-radius:16px;
+
+  background:linear-gradient(
+    135deg,
+    #fff2a6,
+    #ffd700,
+    #c99700
+  );
+
+  color:#111;
+  font-size:19px;
+  font-weight:900;
+
+  box-shadow:
+    0 0 25px rgba(255,215,0,.3),
+    inset 0 1px 1px rgba(255,255,255,.8);
+}
+
+.telegram-btn:active{
+  transform:scale(.98);
+}
+
+/* FEATURES */
+.features{
+  margin-top:5px;
+}
+
+.feature{
+  padding:15px;
+  margin-bottom:10px;
+  border-radius:14px;
+
+  background:linear-gradient(
+    90deg,
+    rgba(255,215,0,.13),
+    rgba(255,255,255,.035)
+  );
+
+  border-left:3px solid #ffd700;
+
+  color:#f1f5f9;
+  font-size:16px;
+}
+
+/* COUNTDOWN */
+.countdown{
+  text-align:center;
+  color:#94a3b8;
+  font-size:13px;
+  margin-top:17px;
+}
+
+#timer{
+  color:#ffd700;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.footer{
+  text-align:center;
+  margin-top:20px;
+  color:#64748b;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="badge">
+    ✓ VERIFIED COMMUNITY
+  </div>
+
+  <div class="card">
+
+    <div class="logo">
+      RAFSA
+    </div>
+
+    <h1>TEAM RAFSA</h1>
+
+    <p class="subtitle">
+      Join our Telegram community for regular updates,
+      announcements and community information.
+    </p>
+
+    <!-- MEMBER / SINCE -->
+    <div class="stats">
+
+      <div class="stat">
+        <strong id="memberCount">2,845</strong>
+        <span>Members</span>
+      </div>
+
+      <div class="stat">
+        <strong>2023</strong>
+        <span>Since</span>
+      </div>
+
+    </div>
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/+dwow3XCnuFZkNmE1"
+      class="telegram-btn"
+      id="telegramBtn">
+      🚀 JOIN TELEGRAM FREE
+    </a>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="feature">
+        ⚡ Regular Community Updates
+      </div>
+
+      <div class="feature">
+        📢 Important Announcements
+      </div>
+
+      <div class="feature">
+        👥 Active Community Support
+      </div>
+
+      <div class="feature">
+        🔐 Free Telegram Access
+      </div>
+
+    </div>
+
+    <div class="countdown">
+      Automatic redirect in
+      <span id="timer">40</span> seconds
+    </div>
+
+    <div class="footer">
+      © 2026 Team RAFSA
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+const TARGET =
+"https://t.me/+dwow3XCnuFZkNmE1";
+
+let seconds = 10;
+let redirected = false;
+
+const timer =
+document.getElementById("timer");
+
+const interval = setInterval(function(){
+
+  seconds--;
+
+  timer.textContent = seconds;
+
+  if(seconds <= 0 && !redirected){
+
+    redirected = true;
+
+    clearInterval(interval);
+
+    window.location.href = TARGET;
+  }
+
+},1000);
+
+
+/* BUTTON CLICK */
+document
+.getElementById("telegramBtn")
+.addEventListener("click",function(){
+
+  redirected = true;
+  clearInterval(interval);
+
+});
+
+
+/* MEMBER DISPLAY */
+let count = 2845;
+
+setInterval(function(){
+
+  count += Math.random() > .4 ? 1 : -1;
+
+  if(count < 2800){
+    count = 2800;
+  }
+
+  document
+  .getElementById("memberCount")
+  .textContent =
+  count.toLocaleString("en-IN");
+
+},3000);
+
+</script>
+
+</body>
+</html>
